@@ -8,8 +8,8 @@ Some application servers (e.g. Ruby's Unicorn) halt progress when dealing with n
 
 ## Versions
 
-* Buildpack Version: 1.0
-* NGINX Version: 1.9.5
+* Buildpack Version: 1.0.2
+* NGINX Version: 1.9.15
 
 ## Requirements
 
@@ -84,7 +84,7 @@ To test the builds:
 ```
 $ make shell
 $ cp bin/nginx-$STACK bin/nginx
-$ FORCE=1 bin/start-nginx
+$ FORCE=1 PORT=80 bin/start-nginx
 ```
 
 ### Application/Dyno coordination
